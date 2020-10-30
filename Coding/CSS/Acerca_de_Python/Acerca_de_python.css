@@ -1,0 +1,203 @@
+/* {
+    outline: 1px solid green;
+}*/
+
+#fondo_azul {
+    width: 970px;
+    height: auto;
+    margin: 0px auto;
+    background-color: #245076;
+}
+
+#logopy {
+    width: 340px;
+    height: 110px;
+    margin-top: 15px;
+    margin-left: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#textsize {
+    display: inline-block;
+    color: white;
+    width: 290px;
+    height: 25px;
+    margin-left: 270PX;
+}
+
+#textsize .textsize {
+    text-align: right;
+    margin: 10px 0px 0px 0px;
+    display: block
+}
+
+.textsize a {
+    color: #d2b102;
+}
+
+.buttongo {
+    border: 3px #c0c0c0 solid;
+    width: 30px;
+    display: inline-block;
+    background-color: #245076;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: black 1px 2px;
+    margin-left: 10px;
+}
+
+form {
+    margin-left: 50px;
+    width: 260px;
+    padding: 1px;
+    background-color: #444444;
+    border-radius: 10px;
+    box-shadow: #1f1f1f 3px 3px;
+}
+
+#psearch {
+    width: 140px;
+    margin-left: 30px;
+    height: 25PX;
+}
+
+.narvbar {
+    list-style-type: none;
+    margin: 20px 0px 0px 125px;
+    padding: 0;
+    border-radius: 7px;
+    display: inline-block;
+    background-image: linear-gradient(#3476ad, #497fad, #3476ad);
+    width: 815px;
+    box-shadow: 2px 7px black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.narvbar li {
+    display: inline-block;
+}
+
+.narvbar li a {
+    display: inline-block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    width: 100px;
+}
+
+.narvbar li a:hover {
+    background-color: #111;
+    border-radius: 7px;
+}
+
+#lisderecha {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    margin-left: 150px;
+    margin-top: 30px;
+}
+
+.lisderecha .viñeta {
+    color: #fbd230;
+    text-decoration: none;
+}
+
+.lisderecha {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    font-size: 15px;
+}
+
+.lisderecha li {
+    margin-bottom: 10px;
+}
+
+.lisderecha a {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.parrafoizq {
+    display: inline-block;
+    width: 580px;
+    margin-left: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.parrafoizq p .yellow {
+    color: #ffd42e;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-style: oblique;
+}
+
+.parrafoizq p .parwhite {
+    font-size: 20px;
+    font-style: oblique;
+}
+
+.parrafoizq span .parwhite {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#backwhite {
+    width: 970px;
+    height: auto;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#started {
+    width: 380px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+#parapp {
+    width: 380px;
+    display: inline-block;
+    text-align: center;
+    margin-left: 15px;
+}
+
+#backwhite hr {
+    width: 380px;
+    height: 3px;
+    background-color: #73a7d5;
+}
+
+#backwhite .elazul {
+    color: #7cacd7;
+}
+
+.cuadrado {
+    list-style-type: square;
+}
+
+#footer {
+    background-image: linear-gradient(to bottom, #245076, #3274ac);
+    height: 80px;
+    text-align: center;
+}
+
+.pfoo {
+    display: inline-block;
+    color: #7cacd7;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.pfoo2 {
+    display: inline-block;
+    color: #7cacd7;
+    font-size: 12px;
+}

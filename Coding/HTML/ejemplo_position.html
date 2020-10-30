@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo Position</title>
+  <style>
+    .cajas {
+      font-weight: bold;
+      border: 3px solid #444;
+      padding: 20px;
+      display: inline-block;
+    }
+
+    .container {
+      position: relative
+    }
+
+    #amarillo {
+      position: fixed;
+      top: 26px;
+      left: 24px;
+    }
+
+    #naranjo {
+      position: absolute;
+      top: 30px;
+      left: 120px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="cajas" style="background-color: blue;">Holanda</div>
+    <div class="cajas" style="background-color: red;">Hello</div>
+    <div class="cajas" id="amarillo" style="background-color: yellow;">Hallo</div>
+    <div class="cajas" id="naranjo" style="background-color: orange;">Bonjour</div>
+  </div>
+  <div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi laborum culpa aliquam aliquid quidem nobis, adipisci aspernatur perferendis et labore, ad explicabo itaque delectus voluptatem, sequi quisquam cumque dolore ullam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores fugiat aspernatur quia cumque aliquid id quasi. Magni voluptatibus, hic quod minima minus itaque. Rerum quisquam nemo reprehenderit amet consequuntur inventore!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam facilis officia, ipsa aliquid earum recusandae quibusdam ea aut quos inventore, consequuntur odit necessitatibus tenetur! Id rem tempora labore cumque adipisci!  </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolores fugiat at delectus esse neque dolore, eum sint, officiis perspiciatis dignissimos et dolorem sapiente eligendi veniam recusandae provident eos. Porro.</p>
+  </div>
+</body>
+</html>

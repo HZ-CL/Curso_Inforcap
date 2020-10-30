@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Ficticio</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+        
+        #padre {
+            background-color: blue;
+            width: 800;
+            height: 400;
+        }
+        
+        #hijo {
+            background-color: black;
+            width: 400;
+            height: 200;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="padre">
+        <h1>pading</h1>
+        <div id="hijo">
+            <p>kpoijnhfdsovsddc,mosij</p>
+
+        </div>
+    </div>
+    <div>
+        <!--Titutlo, foto y descripcion-->
+        <div>
+            <h1><u>Maximiliano</u></h1>
+            <img src="https://www.mediafire.com/convkey/90ea/bvruj6fq6phf9l5zg.jpg" alt="Foto de mi perro" height="317" width="255">
+            <br>
+            <p style="width: 50%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis est pulvinar, sagittis eros in, lobortis augue. Donec sollicitudin vitae velit vel consequat. Vestibulum imperdiet massa vel urna tincidunt feugiat. Fusce sed pellentesque
+                sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In quis placerat erat. Ut nibh tortor, commodo imperdiet aliquam eget, mollis sed mi. Proin quis rutrum elit. Ut ac leo ut ante bibendum
+                tempus a a leo. Quisque gravida lorem urna, non tincidunt odio efficitur nec. Nulla nec consectetur elit. Proin lorem nisl, sagittis eget sollicitudin et, commodo sit amet dui. Nulla in ante risus. Fusce sed faucibus neque. Quisque maximus
+                dui at dolor molestie aliquet. Cras mollis at lectus sed iaculis.</p>
+            <br>
+        </div>
+        <!--Tabla-->
+        <div>
+            <table style="width: 50%;">
+                <thead>
+                    <tr>
+                        <th>Año</th>
+                        <th>PPG</th>
+                        <th>MPG</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1990-91</td>
+                        <td>31.5</td>
+                        <td>SI</td>
+                    </tr>
+                    <tr>
+                        <td>1991-92</td>
+                        <td>30.1</td>
+                        <td>SI</td>
+                    </tr>
+                    <tr>
+                        <td>1992-93</td>
+                        <td>32.6</td>
+                        <td>NO</td>
+                    </tr>
+                    <tr>
+                        <td>1995-96</td>
+                        <td>30.4</td>
+                        <td>SI</td>
+                    </tr>
+                    <tr>
+                        <td>1996-97</td>
+                        <td>29.6</td>
+                        <td>NO</td>
+                    </tr>
+                    <tr>
+                        <td>1997-98</td>
+                        <td>28.7</td>
+                        <td>SI</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--Lista-->
+        <div>
+            <ul>
+                <li>1984 - 1983 Chicago Bulls</li>
+                <LI>1995 - 1998 Chicago Bulls</LI>
+                <li>2001 - 2003 Washington Wizards</li>
+            </ul>
+        </div>
+        <!--link-->
+        <div>
+            <a href="https://www.youtube.com/watch?v=0VfhPAbUOvc" target="_blank">Mira estos cachorros</a>
+        </div>
+        <!--Formulario-->
+        <div>
+            <form action="Formulario_Registro.html" method="POST">
+                <H3>Por favor, contesta esta breve encuesta</H3>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <br><br>
+                <input type="radio" id="acepto" name="enviame" value="acepto">
+                <label for="acepto">Si, por favor enviame motores de correos</label>
+                <br>
+                <input type="radio" id="negar" name="enviame" value="negar">
+                <label for="negar">No por favor, no me mandes ningun correo</label>
+                <br><br>
+                <p>¿Cómo supiste de nosotros?</p>
+                <input type="checkbox" id="facebook" name="pregunta" value="facebook">
+                <label for="facebook">Facebook</label>
+                <br>
+                <input type="checkbox" id="periodico" name="pregunta" value="periodico">
+                <label for="periodico">El periodico</label>
+                <br>
+                <input type="checkbox" id="contacto" name="pregunta" value="contacto">
+                <label for="contacto">Un contacto</label>
+                <br><br><br>
+                <input type="submit" value="Enviar"><br>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
