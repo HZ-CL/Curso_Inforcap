@@ -1,17 +1,18 @@
 <html>
 <script>
-    function printUpTo(x) {
-        for (var i = 1; i < x; i++) {
-            console.log(i);
+    function reemplazarNegativos([x]) {
+        var noneNeg = []
+        for (var i = 0; i < x.length; i++) {
+            if (x[i] < 0) {
+                noneNeg.push("Dojo")
+            }
+            if (x[i] > 0) {
+                noneNeg.push(x[i])
+            }
         }
-        if (x < 0) {
-            console.log("numero negativo");
-            Return "false";
-        }
+        return noneNeg
     }
-    printUpTo(1000);
-    y = printUpTo(-10);
-    console.log(y);
+    console.log(reemplazarNegativos([1, 2, -3, -5, 5]));
 </script>
 
 </html>
