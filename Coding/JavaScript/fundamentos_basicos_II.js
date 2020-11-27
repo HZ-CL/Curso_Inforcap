@@ -1,4 +1,4 @@
-//// Fundamentos_Basicos ////
+//// Fundamentos_Basicos II ////
 
 //// --- 01 --- ////
 // Tamaño Grande - Dado un array, escribe una función que cambie todos los números positivos en él, por el string “big”.
