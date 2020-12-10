@@ -1,0 +1,45 @@
+#main_cont {
+    text-align: center;
+    display: inline-block;
+    margin: 0px auto;
+    width: 970px;
+}
+
+h1 {}
+
+.red {
+    background-color: red;
+}
+
+button {
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+img {
+    height: 25%;
+    width: 25%;
+}
+
+p {
+    display: inline-block;
+}
+
+#barra {
+    display: inline-block;
+    background-color: black;
+    margin: 0px auto;
+    width: 60%;
+    height: 10px;
+}
+
+.colorbefore {
+    border: solid 1px;
+    border-radius: 3px;
+}
+
+.colorafter {
+    border: greenyellow 1px;
+    border-radius: 3px;
+}

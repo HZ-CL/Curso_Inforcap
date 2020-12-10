@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="funciones_jQuery.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function() {
+            //.click
+            //.addclass
+            //.removeClass
+            //.fadein
+            //.fadeout
+            $("#b1").click(function() {
+                $("#classred").addClass("red");
+            });
+            $("#b1_1").click(function() {
+                $("#classred").removeClass("red");
+            });
+            $("#b1_2").click(function() {
+                $("#classred").fadeIn();
+            });
+            $("#b1_3").click(function() {
+                $("#classred").fadeOut();
+            });
+            //.click
+            //.slidetoggle
+            //.hide
+            $("#slideimg").hide();
+            $("#b2").click(function() {
+                $("#slideimg").slideToggle();
+            });
+            //.click
+            //.append
+            $("#b3").click(function() {
+                $("#papp").append("<p class=red >this text is added by .append!</p>")
+            });
+            //.hover
+            //.before
+            //.css
+            //this
+            $(".txtbefore").hover(function() {
+                $("#papp").before("<p class=colorbefore >this text is added by .before!</p>");
+            }, function() {
+                $(this).css("background", "linear-gradient(to left, #00ffcc 0%, #ff0000 100%);");
+            });
+            //.hover
+            //.after
+            //.css
+            //this
+            $("#txtafter").hover(function() {
+                $(this).after("<p class=colorafter >this text is added by .after!</p>");
+            }, function() {
+                $(this).css("background", "linear-gradient(to bottom, #33ccff 0%, #ccffcc 100%)");
+            });
+
+
+        });
+    </script>
+
+
+
+
+
+</head>
+
+<body>
+    <div id="main_cont">
+        <div class="contenido">
+            <h1 id="titulo1" class="addclass">AddClass</h1>
+            <button type="button" id="b1">AddClass</button>
+            <button type="button" id="b1_1">RemoveClass</button>
+
+            <p id="classred">Click the button to add clas "red" to this paragraph</p>
+            <button type="button" id="b1_2">FadeIn</button>
+            <button type="button" id="b1_3">FadeOut</button>
+
+
+        </div>
+        <div id="barra"></div>
+        <div class="contenido">
+            <h1 id="titulo2" class="slidetoggle">Slidetoggle</h1>
+            <button type="button" id="b2">Slidetoggle</button>
+            <p id="slide">Click the button to Slidetoggle a hidden imagen</p>
+            <br>
+            <img id="slideimg" src="https://cdn.pixabay.com/photo/2017/03/08/14/20/flat-2126884_960_720.png" />
+        </div>
+        <div id="barra"></div>
+        <div class="contenido">
+            <h1 id="titulo3" class="append">Append</h1>
+            <button type="button" id="b3">Append</button>
+            <p id="papp">Click the button to append a <span class="txtbefore">new</span> <span id="txtafter">paragraph!</span></p>
+        </div>
+        <div id="barra"></div>
+    </div>
+
+
+</body>
+
+</html>
