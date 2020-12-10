@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja Desaparece</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            for (i = 1; i <= 8; i++) {
+                $("img").addClass("nija" + i)
+            };
+            $("img").click(function() {
+                $(this).fadeOut();
+            });
+
+            $("button").click(function() {
+                $("img").show();
+            });
+        });
+    </script>
+
+
+    <style>
+        img {
+            display: inline-block;
+        }
+        
+        .n1 {
+            vertical-align: top;
+        }
+        
+        div {
+            width: 750px;
+            margin: 20px auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <hr>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Ninjaaa.jpg/180px-Ninjaaa.jpg" alt="silueta ninja">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Ninjaaa.jpg/180px-Ninjaaa.jpg" alt="silueta ninja">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Ninjaaa.jpg/180px-Ninjaaa.jpg" alt="silueta ninja">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Ninjaaa.jpg/180px-Ninjaaa.jpg" alt="silueta ninja">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Ninjaaa.jpg/180px-Ninjaaa.jpg" alt="silueta ninja">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Ninjaaa.jpg/180px-Ninjaaa.jpg" alt="silueta ninja">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Ninjaaa.jpg/180px-Ninjaaa.jpg" alt="silueta ninja">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Ninjaaa.jpg/180px-Ninjaaa.jpg" alt="silueta ninja">
+        <br>
+        <hr>
+        <br>
+        <button type="button" id="rs">Restore</button>
+
+
+    </div>
+
+
+
+</body>
+
+</html>
