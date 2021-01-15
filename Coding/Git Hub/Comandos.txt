@@ -1,0 +1,218 @@
+Directorio de trabajo actual
+    pwd
+
+Listar archivos
+    ls
+
+Listar archivos (formato largo)
+    ls -l
+
+Listar todos los archivos (formato largo)
+    ls -a
+
+Cambiando al directorio actual
+    cd .
+
+Cambiando al directorio padre
+    cd ..
+
+Cambiando al directorio raíz (root)
+    cd /
+
+Cambiando a cualquier carpeta (dentro del directorio)
+    cd nombre_carpeta
+
+Creando una nueva carpeta
+    mkdir nuevo_directorio
+
+Eliminar un directorio vacio
+    rm nombre_directorio
+    rmdir nombre_directorio
+
+Eliminar un directorio que no esta vacio
+    rm -rf nombre_directorio
+
+Creando un nuevo archivo
+    touch index.html
+    touch style.css
+
+Eliminar un archivo
+    rm index.html
+
+Cambiando el nombre (/moviendo un archivo)
+    mv index.html nuevo_nombre.html
+    mv nuevo_nombre.html ../nuevo_nombre.html
+
+Copiando un archivo
+    cp index.html copia.html
+
+Copiando un directorio
+    cp -rf nombre_directorio nombre_copia
+
+Abriendo el directorio actual en tu GUI
+    open .
+
+
+
+Comando SUDO = ejecutar en super usuario(para trabajos en la nube)
+    //Por ejemplo, puedes ejecutar los mismos comandos con  prefijo sudo
+sudo mkdir test
+sudo touch index.html
+sudo rm -rf test
+
+
+Volver al directorio de inicio
+    cd --
+
+Salir de la terminal
+    exit
+
+Muestra el tipo de archivo
+    file
+
+Muestra el inicio de un archivo
+    head
+
+Muestra el final de un archivo
+    tail
+
+Muestra el usuario actual
+    whoami
+
+Muestar todos los comandos escritos por el usuario
+    history
+
+
+Github comands
+
+Configurar usuario y email:
+    git config --global user.name "Tu nombre"
+    git config --global user.email tucorreo@ejemplo.com
+
+Verificar que guardo la configuracion:
+    git config --global --list
+
+Configurar colores de Terminal Github:
+    git config --global color.ui "auto"
+
+Iniciar Repocitorio:
+    git init
+
+gregar todos los archivos
+    git add .
+
+Mostar todos los archivos modificados y se an agregado al area de preparacion
+    git status
+
+confirmar los cambios
+    git commit -m "comentario"
+
+comando para crear ramas nuevas con 2 valores a incluir
+    git branch <nueva rama> <rama antigua>
+
+Alternativa para crear rama nueva
+    git checkout -b NOMBRE_RAMA
+
+Cambiar rama indicada(dara error si el nombre no existe)
+    git checkout ___
+
+Empujar los archivos a una rama alternativa
+    git push origin NOMBRE_RAMA
+
+Muestra todas las ramas
+    git branch
+
+Fusion de ramas en git (fusion directa)(en cada fusion hay que moverse a la rama destino)
+    git merge NOMBRE_RAMA
+
+Fusion de ramas (fusion aplastada)
+    git merge --squash NOMBRE_RAMA
+    git commit -m "commit necesaio para ver las modificacione"
+
+Muestra los respaldos creados
+    git log
+
+Muestra quien escribio que linea de codigo
+    git blame
+
+Le dice a git que agrege un lugar remoto llamado origin usando una url (___)
+    git remote add origin ___
+
+Empuja los cambios de tu repositorio local al remoto
+    git push
+
+baja los cambios desde el repositorio remoto a tu repositorio local
+    git pull
+
+Clona un repositorio remoto (__) a tu propia carpeta local
+    git clone ___
+
+Bajar archivos del repositorio que esten una rama secundaria
+    git pull origin NOMBRE_RAMA
+
+Cuando haces fetch (traer los cambios) de tu repo en GitHub:
+    git fetch origin master
+
+Cuando haces fetch desde el repo original en GitHub:
+    git fetch upstream master (puede ser que necesites un merge)
+
+Tambien puedes usar el comando pull el cual es un atajo para fetch + merge.
+    git pull origin master -m "Esto es un fetch y un merge en un comando!"
+
+
+Instrucciónes:
+A continuación se detallan las instrucciones de como usar Github Pages en un proyecto que ya tengas.
+
+***********==========================**************
+
+Dentro de la carpeta de tu proyecto crea una nueva rama llamada gh-pages con el comando:
+    git checkout -b gh-pages
+
+Realiza un push a tu repositorio remoto, en la misma rama:
+    git push origin gh-pages
+
+Ahora puedes ver el resultado en la URL:
+      https://tu-nombre-usuario.github.io/nombre-proyecto
+
+
+**********=============================**********
+
+https://HZ-CL.github.io/Ramas_fusiones
+https://HZ-CL.github.io/pokemon
+
+
+
+
+
+comandos man git
+    man git
+    man gittutorial
+    man git-add
+    man git-commit
+    man git-push
+    man git-remote
+
+
+Revertir cambios
+    git rever
+
+Reinicio de repositorio (puede ser a un commit particular)
+    Git reset commit_hash --hard
+
+.gitignore{
+    # ignora cualquier archivo llamado "secret.txt"
+        secret.txt
+    # ignora cualquier directorio llamado "secrets"
+        secrets/
+    # ignora un archivo llamado "hidden.txt" ubicado en la raíz de tu directorio de trabajo
+        /hidden.txt
+    # ignora un directorio llamado "node_modules" ubicado en la raíz de tu directorio de trabajo
+        /node_modules/
+    # ignora cualquier archivo con extensión .png
+        *.png
+    # ignora cualquier archivo o directorio que comienza con "cache", como cache-file-01, cached_assets/, etc.
+        cache*
+    # ignora cualquier archivo o directorio que termine con "data", como project_data/, big_file_of_data
+        *data
+
+}

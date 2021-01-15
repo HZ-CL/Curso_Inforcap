@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ninja Desapareciendo</title>
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNfjlpVWVgvxDL_WiN2TCAcTsWrNv6Uj1MCQ&usqp=CAU" type="image/x-icon">
+    <style>
+        button {
+            background-color: green;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            width: 150px;
+            height: 40px;
+            border-radius: 8px;
+        }
+    </style>
+
+    <script src='https://code.jquery.com/jquery-3.5.1.js'></script>
+    <script>
+        $(document).ready(function() {
+            function clonar() {
+
+                for (i = 1; i <= 8; i++) {
+                    $('.imagenes').append('<img id=ninja class=ninja alt=ninja src=https://image.freepik.com/free-vector/cute-ninja-cartoon_295036-76.jpg width=260px height=250>');
+                }
+                $('body').append('<button type=button>Restaurar </button>');
+            }
+            clonar();
+            $('.ninja').click(function() {
+                $(this).slideUp();
+            })
+            $('button').click(function() {
+                $('.ninja').show();
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div class="imagenes">
+    </div>
+</body>
+
+</html>

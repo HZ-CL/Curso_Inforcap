@@ -1,0 +1,32 @@
+$ cd /d/Escritorio/test
+
+$ git add .
+
+$ git commit -m "actualización de html"
+
+$ git add .
+
+$ git commit -m "actualización css"
+
+$ git log
+
+$ git revert 998826
+
+$ git add index.html
+
+$ git revert --continue
+
+$ git add .
+
+$ git commit -m "ultima actualización"
+
+
+
+
+
+
+
+
+
+
+

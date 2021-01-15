@@ -34,7 +34,17 @@ Eventos (funciones para manejar un evento)
     .on()
     .live()
 
+    $.get para ejecutar ajax
+
+
+
+FUNCIONES CONTENIDO DINAMICO
+    .mouseover  (en cambio de .hover)
+
     */
+
+
+
 
 
 /* $('etiqueta ,class) el espacio entre la etiqueta y la coma de la clase es para seleccionar la clase dentro de la etiqueta*/

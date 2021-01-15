@@ -1,0 +1,14 @@
+Primero crear el fork del repositorio en la pagina de Github.
+
+clonar el fork a mi pc con:
+    git clone direccion_repositorio
+
+realice modificaciones en el archivo demo_index.html
+
+git add . para preparar los archivos modificados.
+
+git commit -m "modificaciones!" el commit para versionar los archivos.
+
+git push para agregar los archivos a mi repositorio fork en github.
+
+crear pull request en la pagina de github.
