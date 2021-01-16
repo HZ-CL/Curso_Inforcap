@@ -1,0 +1,39 @@
+Ejecuta los siguientes comandos:
+
+pip list
+muestra una lista de paquetes instalados en el entorno virtual que esta activado
+
+
+deactivate (Esto desactivará tu entorno virtual)
+desactiva el entorno virtual
+
+
+pip3 list(¿En qué se diferencia el resultado de cuando ejecutó pip listcon virtualenv activado? Sugerencia, no deberías tener tantas cosas enumeradas cuando virtualenv está desactivado. Si tus resultados son los mismos, regresa y descubre qué salió mal).
+muestra solo los paquetes que estan instalados de forma global en el pc
+
+
+source myEnvironments/py3Env/bin/activate(Ajusta la ruta según sea necesario para reactivar el virtualenv ; para Windows call myEnvironments/py3Env/Scripts/activate)
+vueve activar el entorno virtual
+
+
+pip install Django==1.11.9 (Sabemos que ya ejecutó este. ¿Qué información ves devuelta en la terminal después de este comando?)
+instala django a la version especifica
+
+
+pip freeze (¿Cuál es la diferencia entre congelar y lista?)
+especifica las versiones de los paquetes para instalar
+
+
+En primer CD en el directorio Escritorio ( cd ~/Desktop), a continuación, ejecuta este comando: pip freeze > requirements.txt. ¿Qué ves cuando tú ls? ¿Qué hay dentro de este archivo?
+extporta un archivo .txt con las expecificaciones de las versiones de los paquetes
+
+
+pip uninstall Django
+desintalña el paquete de django
+
+pip show Django
+muestra "WARNING: Package(s) not found: django", dice que no esta el paquete django
+
+
+pip search Flask Este podría tomar un momento para ejecutarse.
+muestra un error, al tratar de cargar el pquete de Flask
